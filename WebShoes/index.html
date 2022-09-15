@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="social">
+        <div class="social_call">
+            <ul class="help">
+                <li><a href="#">Help</a>
+                    <ul class="social_item social_1">
+                        <li><a href="size.html">Size</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="user">
+                <li><a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    <ul class="social_item social_2">
+                        <li><a href="password.html">Password</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <a href="#" class="logo"><span>T</span>Anh</a>
+            <ul class="menu" id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a>
+                    <span class="sale_lable">Sale</span>
+                    <ul class="sub-menu-1">
+                        <li><a href="#">Men<i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="sub-menu-2">
+                                <li>Adidas</li>
+                                <li>Nike</li>
+                                <li>Puma</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Women<i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="sub_bottom">
+                                <li>Adidas</li>
+                                <li>Nike</li>
+                                <li>Puma</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="policy.html">Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="recruit.html">Recruit</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+            </ul>
+            <div class="bar_mobile">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="right_menu">
+                <div class="search_bar">
+                    <input type="text" id="search" class="search" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass search_item"></i>
+                </div>
+                <a href="favorite.html" class="like">
+                    <i class="fa-regular fa-heart">
+                        <span class="num1">0</span>
+                    </i>
+                </a>
+                <a href="cart.html" class="cart">
+                    <i class="fa-solid fa-bag-shopping">
+                        <span class="num2">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="main_content">
+            <div class="main_text">
+                <span>Collection</span>
+                <h1>Comfortable Shoes with Greate Comfort</h1>
+                <p>Explore the new collection of sneaker</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="main_img">
+                <img src="image/adidas/imghome.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="category_1">
+            <div class="category_box">
+                <a href="#">
+                    <img src="image/tonghop/newb1.png" alt="#">
+                    <span>Men's Shoes</span>
+                </a>
+            </div>
+            <div class="category_box">
+                <a href="#">
+                    <img src="image/adidas/adidas2.png" alt="#">
+                    <span>Women's Shoes</span>
+                </a>
+            </div>
+            <div class="category_box">
+                <a href="#">
+                    <img src="image/tonghop/dep2.png" alt="#">
+                    <span>Slide</span>
+                </a>
+            </div>
+            <div class="category_box">
+                <a href="#">
+                    <img src="image/main/phukien.png" alt="#">
+                    <span>Accessories</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="list_product">
+        <div class="list_pro1">
+            <button class="list active" data-filter="all">All</button>
+            <button class="list" data-filter="adidas">Adidas</button>
+            <button class="list" data-filter="nike">Nike</button>
+            <button class="list" data-filter="puma">Puma</button>
+            <button class="list" data-filter="other">Other</button>
+        </div>
+        <div class="list_pro">
+            <div class="item_box" data-item="adidas">
+                <img src="image/main/insta2.jpg" alt="">
+            </div>
+            <div class="item_box" data-item="nike">
+                <img src="image/main/nikebg1.jpg" alt="">
+            </div>
+            <div class="item_box" data-item="puma">
+                <img src="image/main/pumabg1.jpg" alt="">
+            </div>
+            <div class="item_box" data-item="other">
+                <img src="image/main/otherbg1.jpg" alt="">
+            </div>
+            <div class="item_box" data-item="adidas">
+                <img src="image/main/adidasbg2.jpg" alt="">
+            </div>
+            <div class="item_box" data-item="nike">
+                <img src="image/main/nikebg2.jpg" alt="">
+            </div>
+            <div class="item_box" data-item="puma">
+                <img src="image/main/pumabg2.jpg" alt="">
+            </div>
+            <div class="item_box" data-item="other">
+                <img src="image/main/otherbg2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="collection">
+        <div class="col_card">
+            <div class="col_data">
+                <h3 class="col_name">Nike</h3>
+                <p class="col_description">New Collection 2022</p>
+                <a href="#" class="btn-light">Buy Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <img src="image/main/collection1.png" alt="" class="col_img">
+        </div>
+        <div class="col_card">
+            <div class="col_data">
+                <h3 class="col_name">Adidas</h3>
+                <p class="col_description">New Collection 2022</p>
+                <a href="#" class="btn-light">Buy Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <img src="image/main/collection2.png" alt="" class="col_img">
+        </div>
+    </section>
+    <section class="product1">
+        <h2>Featured Product</h2>
+        <p>Collection New Modern Design</p>
+        <div class="pro_container">
+            <div class="pro">
+                <img src="image/nike/nikejd1.png" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Air Jordan 1 Orange</h5>
+                    <h4>$180</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/nike/nikejd13.png" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Air Jordan 5</h5>
+                    <h4>$200</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/nike/nikemag.png" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Air Mag</h5>
+                    <h4>$1000</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/tonghop/van.png" alt="">
+                <div class="des">
+                    <span>van</span>
+                    <h5>Van Old Skool</h5>
+                    <h4>$120</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/nike/nikejd14.png" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Air Jordan 1 Royal Blue</h5>
+                    <h4>$180</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/adidas/nmd3.png" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Nmd R1 Gray</h5>
+                    <h4>$150</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/nike/nikejd17.png" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Air Jordan 11</h5>
+                    <h4>$250</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/nike/nikejd12.png" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Air Jordan 1 Off White</h5>
+                    <h4>$400</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner_text">
+            <strong>Beutiful Shoes</strong>
+            <span>From $150</span>
+            <p>Long Last And Comfortable to you. This is Only For You</p>
+            <a href="#">Shop Now</a>
+        </div>
+        <div class="banner_img">
+            <img src="image/main/banner-2.png " alt="">
+        </div>
+    </section> 
+    <section class="services">
+        <div class="services_box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Free Shipping</span>
+            <p>Free Shipping For all US orders</p>
+        </div>
+        <div class="services_box">
+            <i class="fa-solid fa-headphones-simple"></i>
+            <span>Support 24/7</span>
+            <p>We suport 24h a day</p>
+        </div>
+        <div class="services_box">
+            <i class="fa-solid fa-rotate"></i>
+            <span>100% Money Back</span>
+            <p>You have 30 day to Return</p>
+        </div>
+    </section>
+    <section class="news_letter">
+        <div class="news_text">
+            <h3 class="discount_title">Subcribes And Get <br> 10% OFF </h3>
+            <p class="discount_des">Get 10% discount for all products</p>
+        </div>
+        <div class="news_form">
+            <input type="text" class="news_input" placeholder="@email.com">
+            <a href="#" class="button">Subcribe</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_section">
+            <div class="col col_1">
+                <h3>T<span>Anh</span></h3>
+                <h5>Phone: +84 834549697</h5>
+                <h5>Hours: 8.00 - 18.00 Mon-Sun</h5>
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col ">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Product Help</a></li>
+                </ul>
+            </div>
+            <div class="col insta">
+                <h3>Instagram</h3>
+                <div class="img_insta">
+                    <div class="img_1">
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta1.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta2.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta3.jpg" alt=""></a>
+                    </div>
+                    <div class="img_2">
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta4.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta5.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta6.jpg" alt=""></a>
+                    </div>
+                    <div class="img_3">
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta7.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta8.jpg" alt=""></a>
+                        <a href="https://www.instagram.com/_lailaanh.23/"><img src="image/main/insta9.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <span>TAnh Shop @ New collection of shoe 2022.</span>
+        </div>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+
+</html>

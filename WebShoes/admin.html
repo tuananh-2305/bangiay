@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <section class="admin_container">
+        <div class="admin_nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Brand Name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                        <span class="title">Shopping</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-message"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <span class="title">PassWord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="card_box">
+                <div class="card">
+                    <div>
+                        <div class="number">1,000</div>
+                        <div class="cardName">User</div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">100</div>
+                        <div class="cardName">Shopping</div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">20</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">4,000</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="recent_order">
+                    <div class="card_header">
+                        <h2>Recent Order</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Anh</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status">dilivery</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/admin.js"></script>
+</body>
+
+</html>

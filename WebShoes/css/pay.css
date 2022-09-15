@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.form_pay{
+    background-color:#f5f5f5;
+    width: 500px;
+    padding:25px;
+    margin:50px auto 0;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+.form_pay h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#088178;
+}
+.input_group{
+    margin-bottom:15px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.input_box{
+    width: 100%;
+    position: relative;
+    padding: 0 5px;
+}
+.input_box .name{
+    width: 100%;
+    padding:10px 10px 10px 50px;
+    outline: none;
+    transition:0.3s;
+    border:1px solid #f5f5f5;
+}
+.input_box .name:focus{
+    border:1px solid #088178;
+}
+.input_box .icon{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+    border:1px solid #fff;
+    background-color:#f5f5f5;
+    width: 40px;
+    border-right: none;
+    pointer-events: none;
+    margin: 1px;
+}
+.name:focus+.icon{
+    border:1px solid #088178;
+    background-color:#088178;
+    color:#fff;
+}
+.input_box h4{
+    margin-bottom:20px;
+    color:#088178;
+}
+.input_box .radio{
+    width: 30%;
+    padding: 10px;
+    background:#fff;
+    border: 1px solid #333;
+}
+.input_box .radio i{
+    padding-right: 5px;
+}
+.input_box .radio:focus{
+    background: #088178;
+    color: #fff
+}
+.pay_card{
+    display: none;
+}
+.input_box .submit{
+    width: 100%;
+    cursor: pointer;
+    padding:10px 15px;
+    background-color:#088178;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+}
+.input_box .submit:hover{
+    transform: scale(0.95);
+}

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+
+<body>
+    <nav class="social">
+        <div class="social_call">
+            <ul class="help">
+                <li><a href="#">Help</a>
+                    <ul class="social_item social_1">
+                        <li><a href="size.html">Size</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="user">
+                <li><a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    <ul class="social_item social_2">
+                        <li><a href="password.html">Password</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <a href="#" class="logo"><span>T</span>Anh</a>
+            <ul class="menu" id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a>
+                    <span class="sale_lable">Sale</span>
+                    <ul class="sub-menu-1">
+                        <li><a href="#">Men<i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="sub-menu-2">
+                                <li>Adidas</li>
+                                <li>Nike</li>
+                                <li>Puma</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Women<i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="sub_bottom">
+                                <li>Adidas</li>
+                                <li>Nike</li>
+                                <li>Puma</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="policy.html">Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="recruit.html">Recruit</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+            </ul>
+            <div class="bar_mobile">
+                <i id="bar" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="right_menu">
+                <div class="search_bar">
+                    <input type="text" id="search" class="search" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass search_item"></i>
+                </div>
+                <a href="favorite.html" class="like">
+                    <i class="fa-regular fa-heart">
+                        <span class="num1">0</span>
+                    </i>
+                </a>
+                <a href="cart.html" class="cart">
+                    <i class="fa-solid fa-bag-shopping">
+                        <span class="num2">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="shop_products">
+        <div class="title">
+            <h2>#shop Products</h2>
+        <div class="overlay"></div>
+        </div>
+        <div class="select_input">
+            <ul class="select_item">
+                <li class="select1"><span>Price</span><i class="fa-solid fa-caret-down"></i>
+                    <ul class="select_list">
+                        <li><a href="#">Price: Low To High</a></li>
+                        <li><a href="#">Price: High To Low</a></li>
+                    </ul>
+                </li>             
+            </ul>
+        </div>
+        <div class="shop">
+            <div class="shop_section">
+                <div class="siderbar">
+                    <div class="shop_menu">
+                        <ul class="item">
+                            <li><label for="btn-1" class="first"><span>Men's Shoes
+                                <i class="fas fa-caret-down"></i></span>
+                                </label>
+                                <input type="checkbox" id="btn-1">
+                            <ul class="sub_menu">
+                                <li><a href="#" class="sub_item">sub item1</a></li>
+                                <li><a href="#" class="sub_item">sub item1</a></li>
+                                <li><a href="#" class="sub_item">sub item1</a></li>
+                            </ul>   
+                            </li>              
+                        </ul>
+                        <ul class="item">
+                            <li><label for="btn-2" class="first">Women's Shoes
+                                <i class="fas fa-caret-down"></i>
+                                </label>
+                                <input type="checkbox" id="btn-2">
+                                <ul class="sub_menu">
+                                    <li><a href="#" class="sub_item">sub item1</a></li>
+                                    <li><a href="#" class="sub_item">sub item1</a></li>
+                                    <li><a href="#" class="sub_item">sub item1</a></li>
+                                </ul> 
+                            </li>
+                        </ul>
+                        <ul class="item">
+                            <li><label><a href="#">Addidas</a></label></li>
+                        </ul>
+                        <ul class="item">
+                            <li><label><a href="#">Nike</a></label></li>
+                        </ul>
+                        <ul class="item">
+                            <li><label><a href="#">Puma</a></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price_container">
+                    <div class="head">
+                        <h2>Price</h2>
+                    </div>
+                    <div class="price_body">
+                        <div class="price_item">
+                            <input type="radio" name="radio" id="bc1" class="radio_item">
+                            <label for="bc1"><span>0 - 100</span><i class="fa-solid fa-sack-dollar"></i></label>
+                        </div>
+                        <div class="price_item">
+                            <input type="radio" name="radio" id="bc2" class="radio_item">
+                            <label for="bc2"><span>100 - 200</span><i class="fa-solid fa-sack-dollar"></i></label>
+                        </div>
+                        <div class="price_item">
+                            <input type="radio" name="radio" id="bc3" class="radio_item">
+                            <label for="bc3"><span>200 - 300</span><i class="fa-solid fa-sack-dollar"></i></label>
+                        </div>
+                        <div class="price_item">
+                            <input type="radio" name="radio" id="bc4" class="radio_item">
+                            <label for="bc4"><span>300 - 400</span><i class="fa-solid fa-sack-dollar"></i></label>
+                        </div>
+                        <div class="price_item">
+                            <input type="radio" name="radio" id="bc5" class="radio_item">
+                            <label for="bc5"><span>400 - 500</span><i class="fa-solid fa-sack-dollar"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_bottom">
+                    <div class="pro_list">
+                        <h2>Best Seller</h2>
+                        <div class="list_item">
+                            <img src="image/nike/nikeair6.png" alt="">
+                            <div class="item_text">
+                                <h3>Nike Jordan 1</h3>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <h4>$180</h4>
+                            </div>
+                        </div>
+                        <div class="list_item">
+                            <img src="image/nike/nikeair2.png" alt="">
+                            <div class="item_text">
+                                <h3>Nike Jordan 1</h3>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <h4>$180</h4>
+                            </div>
+                        </div>
+                        <div class="list_item">
+                            <img src="image/nike/nikeair3.png" alt="">
+                            <div class="item_text">
+                                <h3>Nike Jordan 1</h3>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h4>$180</h4>
+                            </div>
+                        </div>
+                        <div class="list_item">
+                            <img src="image/nike/nikeair4.png" alt="">
+                            <div class="item_text">
+                                <h3>Nike Jordan 1</h3>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h4>$180</h4>
+                            </div>
+                        </div>
+                        <div class="list_item">
+                            <img src="image/nike/nikeair5.png" alt="">
+                            <div class="item_text">
+                                <h3>Nike Jordan 1</h3>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h4>$180</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop_pro">
+                <div class="shop_box">
+                    <img src="image/nike/nikejd1.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd12.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd3.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd4.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd9.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd7.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd8.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/adidas/nmd1.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/adidas/nmd3.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/adidas/nmd4.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/adidas/nmd9.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd13.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd6.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikejd17.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/nike/nikemag.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/adidas/human1.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/adidas/human2.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/tonghop/van2.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_box">
+                    <img src="image/adidas/nmd7.png" alt="">
+                    <div class="shop_text">
+                        <div class="text">
+                            <h4>nike</h4>
+                            <h2>Nike air max</h2>
+                            <div class="card_size">
+                                <h3>Size</h3>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop_slider">
+            <a href="#" class="slider_1">1</a>
+            <a href="#" class="slider_1">2</a>
+            <a href="#" class="slider_1">3</a>
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+    </section>
+    <section class="news_letter">
+        <div class="news_text">
+            <h3 class="discount_title">Subcribes And Get <br> 10% OFF </h3>
+            <p class="discount_des">Get 10% discount for all products</p>
+        </div>
+        <div class="news_form">
+            <input type="text" class="news_input" placeholder="@email.com">
+            <a href="#" class="button">Subcribe</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_section">
+            <div class="col col_1">
+                <h3>T<span>Anh</span></h3>
+                <h5>Phone: +84 834549697</h5>
+                <h5>Hours: 8.00 - 18.00 Mon-Sun</h5>
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Product Help</a></li>
+                </ul>
+            </div>
+            <div class="col insta">
+                <h3>Instagram</h3>
+                <div class="img_insta">
+                    <div class="img_1">
+                        <a href="#"><img src="image/main/insta1.jpg" alt=""></a>
+                        <a href="#"><img src="image/main/insta2.jpg" alt=""></a>
+                        <a href="#"><img src="image/main/insta3.jpg" alt=""></a>
+                    </div>
+                    <div class="img_2">
+                        <a href="#"><img src="image/main/insta4.jpg" alt=""></a>
+                        <a href="#"><img src="image/main/insta5.jpg" alt=""></a>
+                        <a href="#"><img src="image/main/insta6.jpg" alt=""></a>
+                    </div>
+                    <div class="img_3">
+                        <a href="#"><img src="image/main/insta7.jpg" alt=""></a>
+                        <a href="#"><img src="image/main/insta8.jpg" alt=""></a>
+                        <a href="#"><img src="image/main/insta9.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <span>TAnh Shop @ New collection of shoe 2022.</span>
+        </div>
+    </footer>
+    <script src="script/pricerange.js"></script>
+</body>
+
+</html>

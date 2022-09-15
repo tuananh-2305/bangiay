@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+<div class="form_pay">
+    <h2>Payment</h2>
+    <form action="" method="POST">
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="Full Name" required class="name">
+                <i class="fa-solid icon fa-user"></i>
+            </div>
+            <div class="input_box">
+                <input type="tel" placeholder="Phone Number" required class="name">
+                <i class="fa-solid icon fa-phone"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="email" placeholder="Email" required class="name">
+                <i class="fa-solid icon fa-envelope"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="Address" required class="name">
+                <i class="fa-solid icon fa-location-dot"></i>
+            </div>
+        </div>
+        <div class="input_group radio_label">
+            <div class="input_box">
+                <h4>Payment Details</h4>
+                <div class="payment">
+                    <button type="button" class="btn_click1 radio">
+                        <span><i class="fa-solid fa-hand-holding-dollar"></i>Ship Cod</span>
+                    </button>
+                    <button type="button" class="btn_click2 radio"> 
+                        <span><i class="fa-brands fa-cc-visa"></i>Credit Card</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="input_group pay_card">
+            <div class="input_box">
+                <input type="tel" placeholder="Card Number" required class="name card">
+                <i class="fa-solid icon fa-credit-card"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <button type="submit" class="submit">Pay Now</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="script/pay.js"></script>
+</body>
+
+</html>
